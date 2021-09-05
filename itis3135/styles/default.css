@@ -1,0 +1,57 @@
+body
+{
+	font-family: Calibri;
+	color: #2b5096 ;
+	background-color:#8d8d8d;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+header, footer
+{
+	text-align: center;
+	color: #2b5096;
+	font-weight: bold;
+}
+
+h1, h2, h3
+{
+	color: #2b5096;
+	font-family: Georgia;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 200%;
+	line-height: 0px;
+}
+
+a
+{
+	text-decoration: none;
+	color:whitesmoke;
+}
+
+a:hover
+{
+	text-decoration: overline underline;
+}
+
+figure
+{
+	text-align: center;
+}
+
+figcaption
+{
+	font-style: italic;
+}
+
+nav
+{
+	text-align: center;
+}
+
+
+
