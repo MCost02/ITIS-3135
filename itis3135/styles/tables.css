@@ -1,0 +1,94 @@
+body
+{
+    font-family: Calibri;
+	color: black ;
+	background-color:#8d8d8d;
+	width: 825px;
+	margin: 0 auto;
+}
+header, footer
+{
+	text-align: center;
+	color: #2b5096;
+	font-weight: bold;
+}
+
+h1, h2, h3
+{
+	color: #2b5096;
+	font-family: Georgia;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 200%;
+	line-height: 0px;
+}
+
+
+a
+{
+	text-decoration: none;
+	color:#ccc900;
+}
+
+a:hover
+{
+	text-decoration: overline underline;
+}
+
+figure
+{
+	text-align: center;
+}
+
+figcaption
+{
+	font-style: italic;
+}
+
+nav
+{
+	text-align: center;
+    color: #2b5096;
+}
+
+table
+{
+	border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.right {
+    text-align: right !important;
+}
+
+.complex thead
+{
+	background-color: rgb(155, 85, 0);
+    text-align: center;
+}
+
+.complex th, .complex td
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+
+.complex tr:nth-child(odd) td
+{
+	background-color: rgb(220, 120, 1);
+}
+.complex tr:nth-child(even) {
+    background-color: rgba(245, 205, 160);
+}
