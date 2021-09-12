@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/form.css" rel="stylesheet" type="text/css">
+    <title>Marx Costanzo, ITIS 3135, Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Marx Costanzo >> ITIS 3135</h1>
+    </header>
+    <nav>
+        <a href="introduction.html">Introduction</a> || <a href="contract.html">Contract</a> || <a
+            href="tables.html">Tables</a> || <a href="form.html">Form</a>
+    </nav>
+
+    <main>
+        <h2>Form</h2>
+        <h3>Sign up for our Newsletter!</h3>
+        <fieldset>
+            <legend>Contact</legend>
+            <form action="#">
+                <label for="fname" class="textbox">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name" size="25" class="textbox" required><br>
+                <label for="lname" class="textbox">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" size="25" class="textbox" required><br>
+                <label for="email" class="textbox">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" size="30" class="textbox" required><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>What are you interested in?</legend>
+            <input type="checkbox" id="offers" name="offers" value="offers" class="check">
+            <label for="offers" class="check">Exclusive Offers and Promotions</label><br>
+            <input type="checkbox" id="products" name="products" value="products" class="check">
+            <label for="products" class="check">New and Upcoming Products</label><br>
+            <input type="checkbox" id="news" name="news" value="news" class="check">
+            <label for="news" class="check">Latest Tech News</label><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>How often would you like to receive our newsletter?</legend>
+            <input type="radio" id="weekly" name="weekly" value="weekly" class="radio">
+            <label for="weekly" class="radio">Weekly</label><br>
+            <input type="radio" id="biweekly" name="biweekly" value="biweekly" class="radio">
+            <label for="biweekly" class="radio">Bi-Weekly</label><br>
+            <input type="radio" id="monthly" name="monthly" value="monthly" class="radio">
+            <label for="monthly" class="radio">Monthly</label><br>
+        </fieldset>
+        <br>
+
+        <legend>Select your birth month to recieve a special gift!</legend>
+        <select name="birthday" id="birthday" class="selector">
+            <option value="" class="selector">Select</option>
+            <option value="January" class="selector">January</option>
+            <option value="February" class="selector">February</option>
+            <option value="March" class="selector">March</option>
+            <option value="April" class="selector">April</option>
+            <option value="May" class="selector">May</option>
+            <option value="June" class="selector">June</option>
+            <option value="July" class="selector">July</option>
+            <option value="August" class="selector">August</option>
+            <option value="September" class="selector">September</option>
+            <option value="October" class="selector">October</option>
+            <option value="November" class="selector">November</option>
+            <option value="December" class="selector">December</option>
+        </select><br><br>
+        <input type="submit" id="submit" value="Submit" class="button">
+        <label for="enter"></label>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <a href="http://webpages.uncc.edu/mcostan4/" target="_blank">Charlotte.edu</a> &#9553;
+            <a href="https://github.com/MCost02" target="_blank">Github</a> &#9553;
+            <a href="https://MCost02.github.io/" target="_blank">Github.io</a> &#9553;
+            <a href="https://MCost02.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9553;
+            <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> &#9553;
+            <a href="https://www.freecodecamp.org/mcost02" target="_blank">freeCodeCamp</a> &#9553;
+            <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a> &#9553;
+            <a href="https://www.linkedin.com/in/marx-costanzo-jr-01/" target="_blank">LinkedIn</a>
+        </nav>
+        <br />
+        <p>Page built by MC Solutions</p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+    </footer>
+</body>
+
+</html>
