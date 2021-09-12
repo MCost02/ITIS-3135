@@ -50,14 +50,14 @@ nav
 	text-align: center;
 }
 
-form{
-    font-size: 120%;
-}
-
 fieldset{
     border-color:#2b5096;
     border-width: 2px;
     border-radius: 10px;
+}
+.textbox
+{
+    font-size: 120%;
 }
 
 .checkbox
