@@ -53,5 +53,24 @@ nav
 	text-align: center;
 }
 
+.site-eval
+{
+	margin-left: 100px;
+	margin-right: 100px;
+	font-size: 1.2em;
+}
 
+.site-eval a
+{
+	color:rgb(155, 85, 0);
+}
 
+.site-eval a:hover
+{
+	text-decoration:underline;
+}
+
+.site-eval li
+{
+padding-bottom: 10px; 
+}
