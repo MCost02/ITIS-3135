@@ -7,6 +7,8 @@
     <style>
         header {
             background-color: #8CB369;
+            display: grid;
+            grid-template-columns: 2;
         }
 
         main {
@@ -23,14 +25,25 @@
             margin-left: 25%;
             font-size: 1.2em;
         }
+
+        .one {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .two {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            float: right;
+        }
     </style>
     <title>Masterly Adaptive Cheetah Design Co.</title>
 </head>
 
 <body>
     <header>
-        <h1>Masterly Adaptive Cheetah Design Co.</h1>
-        <figure>
+        <h1 class="one">Masterly Adaptive Cheetah Design Co.</h1>
+        <figure class="two">
             <img src="images/cheetah-openclipart-org.png" width="200px" height="89" alt="Cheetah Logo">
         </figure>
     </header>
