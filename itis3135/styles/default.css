@@ -53,6 +53,16 @@ nav
 	text-align: center;
 }
 
+.shrink
+{
+	font-size: .8em;
+}
+
+.center
+{
+	text-align: center;
+}
+
 .site-eval
 {
 	margin-left: 100px;
@@ -73,4 +83,14 @@ nav
 .site-eval li
 {
 padding-bottom: 10px; 
+}
+
+.button {
+    background-color:#2b5096;
+    text-align: center;
+	color:rgb(160, 160, 160);
+    width: 100px;
+    height: 50px;
+    font-size: 120%;
+	margin-bottom: 25px;
 }

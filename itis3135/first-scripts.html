@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <script src="scripts/alert.js"></script>
     <title>Marx Costanzo, ITIS 3135, Simple Interaction</title>
 </head>
 
@@ -23,8 +24,25 @@
     </nav>
 
     <main>
-        <h2>Simple Interaction</h2>
+        <h2>Simple Interaction </h2>
+        <script class="shrink">
+            var userName = askName();
+            var userMood = askMood();
+            var companyName = "Masterly Adaptive Cheetah Design Co.";
+            document.write("<h3>Today is " + todaysDate() + "and the time is: " + currentTime() + "." + "</h3>");
+            document.write("<h3>" + companyName + " welcomes you " + userName + "!" + "</h3>");
+            document.write("<h3>We are glad you are doing " + userMood + "!</h3>")
+        </script>
+        <br>
+        <div class="center">
+            <button class="button" type="button" onclick="cheetah()">Cheetah</button>
+            <button class="button" type="button" onclick="add()">Add</button>
+            <button class="button" type="button" onclick="multiply()">Multiply</button>
+            <button class="button" type="button" onclick="dogYears()">Dogify</button>
+            <button class="button" type="button" onclick="toCelsius()">F° to C°</button>
+        </div>
     </main>
+    <br><br><br><br><br><br><br><br><br><br>
     <footer>
         <nav>
             <a href="http://webpages.uncc.edu/mcostan4/" target="_blank">Charlotte.edu</a> &#9553;
