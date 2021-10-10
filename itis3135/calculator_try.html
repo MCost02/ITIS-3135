@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
-    <script src="scripts/alert.js"></script>
-    <title>Marx Costanzo, ITIS 3135, Simple Interaction</title>
+    <script src="scripts/calculator_try.js"></script>
+    <title>Marx Costanzo, ITIS 3135, Calculator</title>
 </head>
 
 <body>
@@ -26,25 +26,38 @@
     </nav>
 
     <main>
-        <h2>Simple Interaction </h2>
-        <script class="shrink">
-            var userName = askName();
-            var userMood = askMood();
-            var companyName = "Masterly Adaptive Cheetah Design Co.";
-            document.write("<h3>Today is " + todaysDate() + "and the time is: " + currentTime() + "." + "</h3>");
-            document.write("<h3>" + companyName + " welcomes you " + userName + "!" + "</h3>");
-            document.write("<h3>We are glad you are doing " + userMood + "!</h3>")
-        </script>
-        <br>
-        <div class="center">
-            <button class="button" type="button" onclick="cheetah()">Cheetah</button>
-            <button class="button" type="button" onclick="add()">Add</button>
-            <button class="button" type="button" onclick="multiply()">Multiply</button>
-            <button class="button" type="button" onclick="dogYears()">Dogify</button>
-            <button class="button" type="button" onclick="toCelsius()">F° to C°</button>
+        <h2>Calculator</h2>
+        <p class="center">My attempt at making a functional calculator.</p>
+        <div class="calculator">
+            <div id="calc-display">
+
+            </div>
+            <div id="calc-buttons">
+            <button class="calc-number" onclick="seven()">7</button>
+            <button class="calc-number" onclick="eight()">8</button>
+            <button class="calc-number" onclick="nine()">9</button>
+            <button class="calc-function" onclick="add()">+</button>
+            <button class="calc-number" onclick="four()">4</button>
+            <button class="calc-number" onclick="five()">5</button>
+            <button class="calc-number" onclick="six()">6</button>
+            <button class="calc-function" onclick="subtract()">-</button>
+            <button class="calc-number" onclick="one()">1</button>
+            <button class="calc-number" onclick="two()">2</button>
+            <button class="calc-number" onclick="three()">3</button>
+            <button class="calc-function" onclick="multiply()">x</button>
+            <button class="calc-number" onclick="zero()">0</button>
+            <button class="calc-number" onclick="decimal()">.</button>
+            <button class="calc-function" onclick="clear()">C</button>
+            <button class="calc-function" onclick="divide()">/</button>
+            <button class="calc-enter" onclick="equals()">Enter</button>
+            
+            
+            
+            </div>
+            
         </div>
+        <script src="scripts/calculator_fcc.js"></script>
     </main>
-    <br><br><br><br><br><br><br><br><br><br>
     <footer>
         <nav>
             <a href="http://webpages.uncc.edu/mcostan4/" target="_blank">Charlotte.edu</a> &#9553;
