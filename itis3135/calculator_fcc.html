@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <link href="styles/calculator_fcc.css" rel="stylesheet" type="text/css">
+    <title>Marx Costanzo, ITIS 3135, Calculator</title>
 </head>
 
 <body>
@@ -26,10 +27,31 @@
     </nav>
 
     <main>
-        <br>
-        I am Marx Costanzo and this is my ITIS3135 First Course Page.
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>Calculator</h2>
+        <div class="calculator">
+            <div class="calculator__display">0</div>
+            <div class="calculator__keys">
+                <button class="key--operator" data-action="add">+</button>
+                <button class="key--operator" data-action="subtract">-</button>
+                <button class="key--operator" data-action="multiply">&times;</button>
+                <button class="key--operator" data-action="divide">&divide;</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>0</button>
+                <button data-action="decimal">.</button>
+                <button data-action="clear">C</button>
+                <button class="key--equal" data-action="calculate">=</button>
+            </div>
+            <script src="scripts/calculator_fcc.js"></script>
     </main>
+    <br> <br> <br> <br>
     <footer>
         <nav>
             <a href="http://webpages.uncc.edu/mcostan4/" target="_blank">Charlotte.edu</a> &#9553;
