@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="styles/calculator_fcc.css" rel="stylesheet" type="text/css">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
     <script src="scripts/arrays.js"></script>
     <title>Marx Costanzo, ITIS 3135, Arrays</title>
 </head>
@@ -30,6 +30,39 @@
 
     <main>
         <h2>Arrays</h2>
+        <form class="center">
+            <label for="employee">Select an Employee:</label>
+            <select id="employee" name="employee">
+                <option value="D.I. von Briesen">D.I. von Briesen</option>
+                <option value="Matthew Costanzo">Matthew Costanzo</option>
+                <option value="Alex Mckenzie">Alex Mckenzie</option>
+                <option value="Sean Costanzo">Sean Costanzo</option>
+                <option value="Steven James">Steven James</option>
+                <option value="Craig Hodges">Craig Hodges</option>
+                <option value="Anissa Burwell">Anissa Burwell</option>
+                <option value="Taylor James">Taylor James</option>
+            </select>
+        </form>
+        <br> <br>
+        <div  class="center">
+            <button onclick=addSalary()>Add Salary</button>
+            <button onclick=displayResults()>Display Results</button>
+            <button id="display-salary" onclick=displaySalary()>Display Salary</button>
+        </div>
+        <br>
+        <div class="center">
+            <h3>Employee Data</h3>
+            <p>Average Salary: <span id="average">$</span></p>
+            <p>Highest Salary: <span id="max">$</span></p>
+
+            <table class="align-center" id="employee-data">
+                <tr>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+            </table><br>
+        </div>
+
     </main>
 
     <footer>
