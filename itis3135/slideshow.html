@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
     <title>Marx Costanzo, ITIS 3135, Slideshow</title>
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </head>
 
 <body>
@@ -30,7 +32,68 @@
     </nav>
 
     <main>
+        <script>
+            $(document).ready(function () {
+                var imgs = new Array();
+                var intervalID;
+
+                $('#slideshow img').each(function () {
+                    imgs.push($(this).attr('src'));
+                });
+
+                function setImage() {
+                    var active = $('#active');
+                    var currentImageURL = active.attr('src');
+                    var activeImage = $.inArray(currentImageURL, imgs);
+                    if (activeImage == (imgs.length - 1)) {
+                        activeImage = -1;
+                    }
+
+                    active.attr('src', imgs[activeImage + 1]);
+                }
+
+                $(function () {
+                    intervalID = setInterval(setImage, 1500);
+                });
+            });
+        </script>
         <h2>Slideshow</h2>
+        <div class="align-center">
+            <img id="slideshow-main-image" src="images/me.png" alt="">
+        </div>
+        <p class="align-center" id="caption">Marx at Mountaintop Overlook</p>
+        <ul id="slideshow-image-list">
+            <li>
+                <div class="slideshow-image-nav">
+                    <img src="images/me.png" alt="Marx at Mountaintop Overlook">
+                </div>
+            </li>
+            <li>
+                <div class="slideshow-image-nav">
+                    <img src="images/airport_overlook.jpeg" alt="View of St. Thomas from the Airport Overlook">
+                </div>
+            </li>
+            <li>
+                <div class="slideshow-image-nav">
+                    <img src="images/magens_bay.jpeg" alt="Magens Bay, St. Thomas, VI">
+                </div>
+            </li>
+            <li>
+                <div class="slideshow-image-nav">
+                    <img src="images/pinnacle_point.jpeg" alt="View of harbor from Pinnacle Point">
+                </div>
+            </li>
+            <li>
+                <div class="slideshow-image-nav">
+                    <img src="images/trunk_bay.jpeg" alt="Trunk Bay, St. John, VI">
+                </div>
+            </li>
+            <li>
+                <div class="slideshow-image-nav">
+                    <img src="images/plane_view.jpeg" alt="View of St. Thomas from a plane">
+                </div>
+            </li>
+        </ul>
     </main>
     <footer>
         <nav>

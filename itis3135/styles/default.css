@@ -147,3 +147,19 @@ padding-bottom: 10px;
     border-width: .01em;
 	font-size: 1.2em;
 }
+
+#slideshow-image-list {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#slideshow-displayed-image {
+    width: 10em;
+    height: 10em;
+}
+
+.slideshow-image-nav{
+	width: 5em;
+	height: 5em;
+}
