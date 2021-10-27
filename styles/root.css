@@ -1,0 +1,51 @@
+body
+{
+	font-family: Calibri;
+	color: #ffffff ;
+	background-color:#204F37;
+	margin-left: 150px;
+	margin-right: 150px;
+    text-align: center;
+}
+
+
+header, footer
+{
+	color: #A2976B;
+	font-weight: bold;
+}
+
+h1, h2
+{
+	color: #A2976B;
+	font-family: Georgia;
+}
+
+main p,ul
+{
+    font-size: x-large;
+}
+
+
+li
+{
+    text-align: justify;
+    margin-left: 19em;
+    
+}
+
+a
+{
+	text-decoration: none;
+	color:#ffffff;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+footer a:hover
+{
+	text-decoration: overline underline;
+}
