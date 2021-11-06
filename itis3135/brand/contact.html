@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/contact.js"></script>
+    <title>Masterly Adaptive Cheetah Design Co.</title>
+</head>
+
+<body>
+    <div w3-include-html="components/header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <main>
+        <h2>Contact Us</h2>
+        <p>
+            <b>Feel free to stop by our office or contact us at any of the following:</b>
+            <br>9201 University City Blvd. Charlotte, NC 28223
+            <br>(704)-243-3824
+            <br>consulting@macdesign.com
+            <br>
+            <br>
+        </p>
+        <p>
+            <b>Have Us Reach Out to You!</b>
+        </p>
+        <form>
+            <label for="fname">First Name*</label>
+            <br>
+            <input type="text" id="fname" placeholder="First Name" required />
+            <br>
+            <label for="lname">Last Name*</label>
+            <br>
+            <input type="text" id="lname" placeholder="Last Name" required />
+            <br>
+            <label for="email">Email*</label>
+            <br>
+            <input type="email" id="email" placeholder="example@example.com" required />
+            <br>
+            <label for="phone">Phone Number</label>
+            <br>
+            <input type="tel" id="phone" placeholder="(xxx)-xxx-xxxx" />
+            <br>
+            <button onclick="displayContactInfo()" type="button" id="submit-button">Submit</button>
+            <p><i id="contact-info"></i></p>
+        </form>
+    </main>
+    <div w3-include-html="components/footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+
+</html>
