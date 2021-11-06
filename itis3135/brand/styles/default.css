@@ -64,3 +64,8 @@ a:hover{
   background-color: black;
   
 }
+
+li, .list-image {
+    list-style-type: none;
+    padding-bottom: 1em;
+}
