@@ -1,0 +1,51 @@
+body
+{
+	font-family: Calibri;
+	color: #2b5096 ;
+	background-color:#BFAD83;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+header, nav, footer, h2, .contact-info{
+    text-align: center;
+}
+
+fieldset{
+    border-radius: 10px;
+    text-align: center;
+    border-width: 2px;
+    padding-top: 1em;
+}
+
+.contact-info fieldset{
+    border:0;
+}
+
+.mission-statement{
+    font-family: cursive;
+}
+
+.two-column{
+display: grid;
+            grid-template-columns: 1fr 1fr;
+}
+
+.founder1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-top: 2em;
+}
+
+.founder2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.certification{
+    padding-left: 6em;
+}
+
+.services td { 
+    padding-top: 2em;
+}
