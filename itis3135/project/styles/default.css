@@ -7,7 +7,7 @@ body
 	margin-right: 300px;
 }
 
-header, nav, footer, h2, .contact-info{
+header, nav, footer, h1, h2, h3, .contact-info{
     text-align: center;
 }
 
