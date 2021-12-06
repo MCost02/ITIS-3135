@@ -4,33 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="scripts/testimonials.js"></script>
+    <script src="scripts/multi-animated-counter.js"></script>
     <title>Integrity Court Reporting, About</title>
 </head>
 
 <body>
     <div data-include="components/header.html"></div>
     <main>
-    <h2>About Us</h2>
-    <h3 class="mission-statement">“Integrity” is not just a name. It is the foundation of our character.</h3>
-    <div class="two-column">
-        <p class="founder1">Tia is a certified court reporter, owner, and managing member of Integrity Court Reporting,
-            LLC, a multi-service court reporting firm based in Kennesaw, Georgia. Tia attended Brown College of Court
-            Reporting in Atlanta, Georgia, where she graduated with honors and obtained her associate’s degree in court
-            reporting. Prior to becoming a nationally certified court reporter, Tia obtained her bachelor’s degree in
-            business administration from Johnson and Wales University in Miami, Florida, and has been in the legal field
-            of investigation services for over ten years.</p>
-        <figure class="founder2">
-            <img src="images/tia.png" alt="Founder of ICR, Tia">
-        </figure>
-    </div>
-    <h3>Our Certifications</h3>
-    <figure class="certification">
-        <img src="images/nvra.png" alt="NVRA logo">
-    </figure>
-    <figure class="certification">
-        <img src="images/gcra.png" alt="GCRA logo">
-    </figure>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>About Us</h2>
+        <h3 class="section mission-statement">“Integrity” is not just a name. It is the foundation of our character.
+        </h3>
+        <div class=" section two-column">
+            <p class="founder1">Tia is a certified court reporter, owner, and managing member of Integrity Court
+                Reporting,
+                LLC, a multi-service court reporting firm based in Kennesaw, Georgia. Tia attended Brown College of
+                Court
+                Reporting in Atlanta, Georgia, where she graduated with honors and obtained her associate’s degree in
+                court
+                reporting. Prior to becoming a nationally certified court reporter, Tia obtained her bachelor’s degree
+                in
+                business administration from Johnson and Wales University in Miami, Florida, and has been in the legal
+                field
+                of investigation services for over ten years.</p>
+            <figure class="founder2">
+                <img src="images/tia.png" alt="Founder of ICR, Tia">
+            </figure>
+        </div>
+        <br>
+        <div class="section">
+            <h3>Testimonials</h3>
+            <ul id="slider">
+                <li>
+                    <p>"Integrity Court Reporting is outstanding! They are committed to customer
+                        satisfaction and their service is exceptional."</p>
+                </li>
+                <li>
+                    <p>"Tia and her team provide quality services and we look forward to working with them again in the
+                        future."</p>
+                </li>
+                <li>
+                    <p>"ICR ALWAYS goes above and beyond to keep us happy and get the job done well. They are
+                        professional, helpful, friendly, and efficient."</p>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class=section>
+            <div id="counters_1">
+                <div class="counter" data-TargetNum="187"></div>
+                <p>depositions completed and counting...</p>
+            </div>
+        </div>
+        <br>
+        <div class="section">
+            <h3>Our Certifications</h3>
+            <div class="two-column">
+                <figure class="certification1">
+                    <img src="images/nvra.png" width="200" height="100" alt="NVRA logo">
+                </figure>
+                <figure class="certification2">
+                    <img src="images/gcra.png" width="200" height="100" alt="GCRA logo">
+                </figure>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>

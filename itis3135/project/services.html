@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="scripts/services.js"></script>
     <title>Integrity Court Reporting, Services</title>
 </head>
 
@@ -11,91 +15,100 @@
     <div data-include="components/header.html"></div>
     <main>
         <h2>Our Services</h2>
-        <h3>Professional, Reliable, and Honest</h3>
-        <p>Integrity Court Reporting is a full-service attorney support agency providing services throughout North
-            Georgia. We offer services that range from court reporting to litigation support services and more. Our team
-            of reporters are committed to high-quality services. We have the best court reporters, videographers, and
-            translators. Our team is committed to ensuring our client's deadlines, accommodating their needs, requests,
-            and expectations are exceeded.</p>
-        <table class="services">
-            <thead>
-            <tbody>
-                <tr>
-                    <td><b>Court Reporting</b></td>
-                    <td>Our team of court reporters are certified on a state and/or national level and experienced in
-                        various types of proceedings. As a court reporter, we are professionally trained to take down
-                        verbatim proceedings creating an accurate record of depositions, hearings, meetings,
-                        conventions, arbitrations, interviews, conferences, and produce an accurate transcript in a
-                        timely manner. Our reporters punctual, versatile to their work environment, and attentive to all
-                        the details of the proceeding.</td>
-                </tr>
-                <tr>
-                    <td><b>Legal Videography</b></td>
-                    <td>We provide a professional and accurate video recording of proceedings. Our video recordings are
-                        a great way to supplement any written transcripts. We'll help document your meeting and legal
-                        proceeding through our high-tech video and sound equipment. Our videographers will give you more
-                        than a fragment of information; they'll give you facial expressions, pauses and documents what
-                        was said in your meetings</td>
-                </tr>
-                <tr>
-                    <td><b>Telepehonic</b></td>
-                    <td>Conducting a telephonic deposition can be a good way to cut costs and save time travel. Often,
-                        deposing witnesses can be located a long-distance away, out of state, or a witness is unable to
-                        travel because of physical limitations or illness. This is an issue that many attorneys face.
-                        Integrity Court Reporting can save you time and money when parties aren't able to travel. We
-                        also guarantee state-of-the-art phone equipment to ensure the best audio possible. Our audio is
-                        clear, free of skips and random distortion.</td>
-                </tr>
-                <tr>
-                    <td><b>Interpreter</b></td>
-                    <td>Integrity Court Reporting, LLC, provides interpretation services in all languages. Our
-                        Interpreters are certified and experienced in their respective language(s) and can provide
-                        simultaneous verbatim interpretation during legal proceedings. Upon request, we can arrange for
-                        an Interpreter to accompany our Court Reporter to ensure clear and effective communication
-                        between speakers, resulting in a clean and accurate transcript.</td>
-                </tr>
-                <tr>
-                    <td><b>Video/Remote Service</b></td>
-                    <td>Throughout the years, video and audio services have become more reliable and dependent upon for
-                        litigations, such as depositions, trials, hearings, arbitrations, and mediations. Often,
-                        traveling for legal proceedings may not be ideal. Scheduling conflicts, travel costs, long
-                        flight times, or weather delays are some issues that can be encountered. Integrity Court
-                        Reporting can efficiently connect you and other participants through our secure and high-speed
-                        video conferencing services. We also provide mobile and video/text streaming capabilities.</td>
-                </tr>
-                <tr>
-                    <td><b>Expedited Transcripts</b></td>
-                    <td>Integrity Court Reporting offers fast, professional, and cost-effective transcript services. We
-                        offer both standard and expedited services. Our trained, certified court reporters and
-                        transcribers can deliver completed transcripts as soon as you need them, including same-day
-                        completion.</td>
-                </tr>
-                <tr>
-                    <td><b>Conference Room</b></td>
-                    <td>We offer several deposition suites that are conveniently located around the Metro Atlanta area.
-                        All of our conference rooms are fully equipped with the latest technology for audio and video
-                        communication, large video monitors, high-speed internet, Wi-Fi, comfortable and spacious
-                        seating that can be tailored to accommodate any group size. If there are any special requests,
-                        please let us know. We will try our best to make it happen.
-                        <br>Our Metro Atlanta Locations:
-                        <ul>
-                            <li>Atlanta, GA - Buckhead</li>
-                            <li>Roswell, GA - Fulton</li>
-                            <li>Snellville, GA - Gwinnett</li>
-                            <li>Snellville, GA - Forsyth</li>
-                            <li>Kennesaw, GA - Cobb </li>
-                            <li>Peachtree City - Fayette</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>Transcription</b></td>
-                    <td>If you have audio or video files, we are well equipped to transcribe them. Whether it’s a court
-                        hearing, video, 911 call, voicemail, meeting, and medical transcription, we can transcribe them
-                        and provide you with a certified transcript.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="section">
+            <h3>Professional, Reliable, and Honest</h3>
+            <p>Integrity Court Reporting is a full-service attorney support agency providing services throughout North
+                Georgia. We offer services that range from court reporting to litigation support services and more. Our
+                team
+                of reporters are committed to high-quality services. We have the best court reporters, videographers,
+                and
+                translators. Our team is committed to ensuring our client's deadlines, accommodating their needs,
+                requests,
+                and expectations are exceeded.</p>
+        </div>
+        <br>
+        <div id="accordion">
+            <h4 class="top-edge">Court Reporting</h4>
+            <div>
+                <p>Our team of court reporters are certified on a state and/or national level and experienced in
+                    various types of proceedings. As a court reporter, we are professionally trained to take down
+                    verbatim proceedings creating an accurate record of depositions, hearings, meetings,
+                    conventions, arbitrations, interviews, conferences, and produce an accurate transcript in a
+                    timely manner. Our reporters punctual, versatile to their work environment, and attentive to all
+                    the details of the proceeding.</p>
+            </div>
+
+            <h4>Legal Videography</h4>
+            <div>
+                <p>We provide a professional and accurate video recording of proceedings. Our video recordings are
+                    a great way to supplement any written transcripts. We'll help document your meeting and legal
+                    proceeding through our high-tech video and sound equipment. Our videographers will give you more
+                    than a fragment of information; they'll give you facial expressions, pauses and documents what
+                    was said in your meetings.</p>
+            </div>
+
+            <h4>Telepehonic</h4>
+            <div>
+                <p>Conducting a telephonic deposition can be a good way to cut costs and save time travel. Often,
+                    deposing witnesses can be located a long-distance away, out of state, or a witness is unable to
+                    travel because of physical limitations or illness. This is an issue that many attorneys face.
+                    Integrity Court Reporting can save you time and money when parties aren't able to travel. We
+                    also guarantee state-of-the-art phone equipment to ensure the best audio possible. Our audio is
+                    clear, free of skips and random distortion.</p>
+            </div>
+
+            <h4>Interpreter</h4>
+            <div>
+                <p>Integrity Court Reporting, LLC, provides interpretation services in all languages. Our
+                    Interpreters are certified and experienced in their respective language(s) and can provide
+                    simultaneous verbatim interpretation during legal proceedings. Upon request, we can arrange for
+                    an Interpreter to accompany our Court Reporter to ensure clear and effective communication
+                    between speakers, resulting in a clean and accurate transcript.</p>
+            </div>
+
+            <h4>Video/Remote Service</h4>
+            <div>
+                <p>Throughout the years, video and audio services have become more reliable and dependent upon for
+                    litigations, such as depositions, trials, hearings, arbitrations, and mediations. Often,
+                    traveling for legal proceedings may not be ideal. Scheduling conflicts, travel costs, long
+                    flight times, or weather delays are some issues that can be encountered. Integrity Court
+                    Reporting can efficiently connect you and other participants through our secure and high-speed
+                    video conferencing services. We also provide mobile and video/text streaming capabilities.</p>
+            </div>
+
+            <h4>Expedited Transcripts</h4>
+            <div>
+                <p>Integrity Court Reporting offers fast, professional, and cost-effective transcript services. We
+                    offer both standard and expedited services. Our trained, certified court reporters and
+                    transcribers can deliver completed transcripts as soon as you need them, including same-day
+                    completion.</p>
+            </div>
+
+            <h4>Transcription</h4>
+            <div>
+                <p>If you have audio or video files, we are well equipped to transcribe them. Whether it’s a court
+                    hearing, video, 911 call, voicemail, meeting, and medical transcription, we can transcribe them
+                    and provide you with a certified transcript.</p>
+            </div>
+
+            <h4 class="bottom-edge">Conference Room</h4>
+            <div>
+                <p>We offer several deposition suites that are conveniently located around the Metro Atlanta area.
+                    All of our conference rooms are fully equipped with the latest technology for audio and video
+                    communication, large video monitors, high-speed internet, Wi-Fi, comfortable and spacious
+                    seating that can be tailored to accommodate any group size. If there are any special requests,
+                    please let us know. We will try our best to make it happen.</p>
+                <p>Our Metro Atlanta Locations:</p>
+                <ul>
+                    <li>Atlanta, GA - Buckhead</li>
+                    <li>Roswell, GA - Fulton</li>
+                    <li>Snellville, GA - Gwinnett</li>
+                    <li>Snellville, GA - Forsyth</li>
+                    <li>Kennesaw, GA - Cobb </li>
+                    <li>Peachtree City - Fayette</li>
+                </ul>
+            </div>
+        </div>
         <br><br><br><br><br>
     </main>
     <div data-include="components/footer.html"></div>

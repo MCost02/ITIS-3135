@@ -11,11 +11,34 @@ header, nav, footer, h1, h2, h3, .contact-info{
     text-align: center;
 }
 
+table{
+    padding-left: 7em;
+}
+
 fieldset{
     border-radius: 10px;
     text-align: center;
     border-width: 2px;
     padding-top: 1em;
+}
+
+a
+{
+	text-decoration: none;
+	color:#fafafa;
+}
+
+a:hover
+{
+	text-decoration: overline underline;
+}
+
+.section {
+    background-color: #fafafa;
+    padding: 1em 2em;
+    border-radius: 15px;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .contact-info fieldset{
@@ -42,10 +65,55 @@ display: grid;
     grid-column-end: 3;
 }
 
-.certification{
-    padding-left: 6em;
+.certification1{
+    padding-left: 5em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.certification2{
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .services td { 
     padding-top: 2em;
+}
+
+.top-edge{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.bottom-edge{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.counter{
+    font-size: 2em;
+}
+
+#accordion{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#accordion h4, p, div, ul{
+	font-family: Calibri;
+	color: #2b5096 ;
+}
+
+#slider p{
+	font-family: cursive;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+	width: 500px;
+	margin: auto auto;
+    padding: 10px;
+}
+
+#counters_1{
+    text-align: center;
 }
