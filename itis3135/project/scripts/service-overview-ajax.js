@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $.ajax({
         type: "get",
-        url: "service-overview.json",
+        url: "components/service-overview.json",
         beforeSend: function(){
             $("#serviceOverview").html("Loading...");
         },
