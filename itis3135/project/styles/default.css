@@ -33,6 +33,10 @@ a:hover
 	text-decoration: overline underline;
 }
 
+.align-center{
+        text-align: center;
+}
+
 .section {
     background-color: #fafafa;
     padding: 1em 2em;
