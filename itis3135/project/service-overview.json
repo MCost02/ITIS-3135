@@ -1,0 +1,28 @@
+{
+    "serviceOverview": [
+        {
+            "service": "Court Reporting",
+            "description": "Our court reporters are certified, realtime capable, and experienced in all aspects verbatim reporting."
+        },
+        {
+            "service": "Videography",
+            "description": "We offer high definition video and recording. Our videos will help capture body language, facial expression, intonation, gestures, etc."
+        },
+        {
+            "service": "Telepehonic",
+            "description": "We offer simple and secure ways to communicate and interview witnesses."
+        },
+        {
+            "service": "Video/Remote Service",
+            "description": "Our conference rooms are equipped with HD video screens, high-speed wifi, and high-quality speakers for a successful meeting."
+        },
+        {
+            "service": "Interpretation",
+            "description": "Our translators offer a full range of language interpretation to provide you with clear communication between speakers of different languages."
+        },
+        {
+            "service": "Online Repository",
+            "description": "Instant document retrieval. We understand how important and time pressing your transcripts are. We offer several delivery options in a safe, secure, and confidential way."
+        }
+    ]
+}
