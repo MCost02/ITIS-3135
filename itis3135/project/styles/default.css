@@ -2,7 +2,7 @@ body
 {
 	font-family: Calibri;
 	color: #2b5096 ;
-	background-color:#BFAD83;
+	background-color:#d6c7a3;
 	margin-left: 300px;
 	margin-right: 300px;
 }
@@ -25,12 +25,13 @@ fieldset{
 a
 {
 	text-decoration: none;
-	color:#fafafa;
+	color:#000000;
 }
 
 a:hover
 {
 	text-decoration: overline underline;
+    color:#fafafa;
 }
 
 .align-center{
