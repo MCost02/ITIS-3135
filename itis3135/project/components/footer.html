@@ -9,4 +9,28 @@
     <br />
     <p>Copyright 2021 © inTegRity Reporting, LLC | All Rights Reserved.</p>
     <p>Page built by MC Solutions</p>
+    <br><br>
+    <a href="https://validator.w3.org/check?uri=referer" target="_blank" class="validator-button">HTML Validator</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" class="validator-button">CSS
+        Validator</a>
+
+    <script>
+        // this will make sure the validation links include the url of the current page
+        // which seems to be necessary with github and some sites that don't send the referrer
+        // headings
+
+        var currentURL = window.location.href; // gets current URL
+
+        // append current URL to the URL's for each validation service
+        var htmlValidatorURL = "http://validator.w3.org/check?uri=" + currentURL;
+        var cssValidatorURL = "http://jigsaw.w3.org/css-validator/validator?uri=" + currentURL;
+
+        // assign the URL's to the anchor elements in the footer
+        document.getElementById("htmlvalidator").setAttribute("href", htmlValidatorURL);
+        document.getElementById("cssvalidator").setAttribute("href", cssValidatorURL);
+    
+        // comment this out once you're sure it's right
+        //alert("Footer says here:\n" + htmlValidatorURL + "\n" + cssValidatorURL);
+        
+        </script>
 </footer>

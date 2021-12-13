@@ -99,6 +99,16 @@ display: grid;
     font-size: 2em;
 }
 
+.validator-button {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 7.5px;
+    color: white;
+    background-color: black;
+    
+}
+
 #accordion{
     margin-left: 2em;
     margin-right: 2em;
